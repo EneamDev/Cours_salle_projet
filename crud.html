@@ -21,19 +21,17 @@
         
         <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="position: sticky; top:0;" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="">KARM</a>
+                <a class="navbar-brand" href="">Cours et Salles</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/indexController.php">Mon Site</a></li>            
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/categorieController.php">Categorie</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/publicationController.php">Publication</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/sectionController.php">Sections</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/contactController.php">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/commentaireController.php">Commentaires</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/publicationController.php">Cours</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/sectionController.php">UE</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/contactController.php">Programmation</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/commentaireController.php">Enseignant</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../../controllers/admin/logoutController.php">Déconnexion</a></li>
                         <li class="nav-item"><span class="nav-link px-lg-4 py-3 py-lg-2 mt-2 bg-light" href="../../controllers/admin/logoutController.php">Paulin</span></li>
                     </ul>
@@ -47,10 +45,10 @@
 
         
         
-        <h2>Gestion des catégories</h2>
+        <h2>Gestion des UE</h2>
         <div class="form-floating">
             <input class="form-control mb-2" id="name" value="" name="nom_categorie" type="text" placeholder="Entrer le nom de la catégorie..." data-sb-validations="required" />
-            <label for="name">Nom de la catégorie</label>
+            <label for="name">Nom de l'UE</label>
             <div class="invalid-feedback" data-sb-feedback="name:required">Le nom est obligatoire.</div>
         </div>
 
@@ -72,33 +70,33 @@
         <table class="table table-responsive table-striped">
             <thead>
                 <td>Id</td>
-                <td>Nom de la catégorie</td>
+                <td>Nom de l'UE</td>
                 <td>Sélectionner</td>
             </thead>
             <tbody>
                                     <tr>
                         <td><a href="../../controllers/admin/categorieController.php?categorie=21">#21</a></td>
-                        <td>Actualités</td>
+                        <td>Analyse Maths</td>
                         <td><input type="checkbox" name="supprimer[]" value="21" id=""></td>
                     </tr>
                                     <tr>
                         <td><a href="../../controllers/admin/categorieController.php?categorie=20">#20</a></td>
-                        <td>Citations</td>
+                        <td>Anglais</td>
                         <td><input type="checkbox" name="supprimer[]" value="20" id=""></td>
                     </tr>
                                     <tr>
                         <td><a href="../../controllers/admin/categorieController.php?categorie=6">#6</a></td>
-                        <td>Nouvelles</td>
+                        <td>TEEO</td>
                         <td><input type="checkbox" name="supprimer[]" value="6" id=""></td>
                     </tr>
                                     <tr>
                         <td><a href="../../controllers/admin/categorieController.php?categorie=5">#5</a></td>
-                        <td>Contes</td>
+                        <td>POO</td>
                         <td><input type="checkbox" name="supprimer[]" value="5" id=""></td>
                     </tr>
                                     <tr>
                         <td><a href="../../controllers/admin/categorieController.php?categorie=1">#1</a></td>
-                        <td>Articles</td>
+                        <td>Analyse Financiere</td>
                         <td><input type="checkbox" name="supprimer[]" value="1" id=""></td>
                     </tr>
                             </tbody>
